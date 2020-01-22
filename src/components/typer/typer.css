@@ -1,0 +1,25 @@
+.typer {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    text-align: left;
+    color: #fff;
+    z-index: 100;
+}
+
+.typer-heading {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+.typer-text {
+    font-size: 2em;
+    border-right: .1em solid #fff;
+    animation: blink .7s steps(1) infinite;
+}
+  
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

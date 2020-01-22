@@ -1,0 +1,31 @@
+.second-page {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 95;
+    background-color: black;
+}
+
+.second-one {
+	position: absolute;
+	width: 1px;
+	height: 100vh;
+	background: rgba(255, 255, 255, 0.2);
+	left: 25%;
+}
+  
+.second-two {
+	position: absolute;
+	width: 1px;
+	height: 100vh;
+	background: rgba(255, 255, 255, 0.2);
+	left: 50%;
+}
+  
+.second-three {
+	position: absolute;
+	width: 1px;
+	height: 100vh;
+	background: rgba(255, 255, 255, 0.2);
+	left: 75%;
+}

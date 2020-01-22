@@ -1,0 +1,146 @@
+.footer {
+    position: absolute;
+    width: 100vw;
+    height: 10%;
+    bottom: 0;
+    color: #fff;
+    background-color: #000;
+}
+
+.arrow-left {
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: -0.5em;
+    left: 5%;
+    color: #fff;
+}
+
+.arrow-right {
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: -0.5em;
+    left: 10%;
+    color: #fff;
+}
+
+.plus {
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: -0.5em;
+    left: 15%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.rotate-right {
+    animation: rotate-right 0.6s ease-in-out both;
+}
+
+.rotate-left {
+    animation: rotate-left 0.6s ease-in-out both;
+}
+
+.footer-text {
+    position: absolute;
+    bottom: 43%;
+    margin-bottom: -0.5em;
+    left: 15%;
+    font-size: 1em;
+    animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    z-index: 5;
+}
+
+.footer-text-none {
+    position: absolute;
+    bottom: 43%;
+    margin-bottom: -0.5em;
+    left: 15%;
+    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    z-index: 5;
+}
+
+@keyframes rotate-right {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-left {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(100px);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        opacity: 1;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+}
+
+@media(max-width: 575px) {
+    .arrow-right {
+        left: 15%;
+    }
+
+    .plus {
+        left: 25%;
+    }
+
+    @keyframes slide-right {
+        0% {
+            opacity: 0;
+            transform: translateX(0);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(60px);
+        }
+    }
+    
+    @keyframes slide-left {
+        0% {
+            opacity: 1;
+            transform: translateX(60px);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(0);
+        }
+    }
+}
+
+@media(min-width:576px) and (max-width: 968px) {
+    .arrow-right {
+        left: 15%;
+    }
+
+    .plus {
+        left: 25%;
+    }
+
+    .footer-text, .footer-text-none {
+        left: 25%;
+    }
+}

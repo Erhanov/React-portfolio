@@ -1,0 +1,43 @@
+.loader {
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    background: url(./limbo.jpg) center center no-repeat #000000;
+    z-index: 1000;
+    animation: fill 2s ease-in-out both;
+    z-index: 105;
+}
+
+.loader span {
+    position: absolute;
+    bottom: 5%;
+    right: 70%;
+    font-size: 4em;
+    font-family: "Charm";
+    font-weight: bolder;
+    color: rgb(194, 194, 194);
+    white-space: nowrap;
+}
+
+@keyframes fill {
+    0% {
+        width: 0;
+        right: 0;
+    }
+    25% {
+        width: 100vw;
+        right: 0;
+    }
+
+    100% {
+        width: 0;
+        right: 100%;
+    }
+}
+  
+@media(min-width: 320px) and (max-width: 968px) {
+    .loader span {
+        font-size: 2em;
+        right: 15%;
+    }
+}
